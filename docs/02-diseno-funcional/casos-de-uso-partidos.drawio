@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="dcu02a" name="DCU-02A · Creación y consulta">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1500" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" value="Convocados | DCU-02A · Creación y consulta · v1.1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="230" y="65" width="1040" height="930" />
+        </mxCell>
+        <mxCell id="visitor" value="Visitante" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="150" width="90" height="85" />
+        </mxCell>
+        <mxCell id="user" value="Usuario registrado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="410" width="90" height="85" />
+        </mxCell>
+        <mxCell id="org" value="Organizador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="670" width="90" height="85" />
+        </mxCell>
+        <mxCell id="search" value="Buscar y consultar partidos" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="120" width="260" height="65" />
+        </mxCell>
+        <mxCell id="create" value="Crear partido público" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="260" width="260" height="65" />
+        </mxCell>
+        <mxCell id="share" value="Compartir enlace" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="400" width="260" height="65" />
+        </mxCell>
+        <mxCell id="friends" value="Agregar amigos y asignar equipos" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="540" width="260" height="65" />
+        </mxCell>
+        <mxCell id="edit" value="Modificar cancha, fecha u horario" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="680" width="260" height="65" />
+        </mxCell>
+        <mxCell id="link" value="Generar enlace público único" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="260" width="260" height="65" />
+        </mxCell>
+        <mxCell id="validate" value="Validar capacidad, identidad y horarios" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="540" width="260" height="65" />
+        </mxCell>
+        <mxCell id="notify" value="Notificar cambios y requerir reconfirmación" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="680" width="260" height="65" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="visitor" target="search">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="user" target="search">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="user" target="create">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="share">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="friends">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="edit">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;endArrow=block;endFill=0;" edge="1" parent="1" source="org" target="user">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="create" target="link">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="create" target="validate">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="friends" target="validate">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e10" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="edit" target="notify">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="note" value="RF-PA-01/02/03/05/07/09/10. El creador ocupa un cupo. Modalidades 5, 7, 8 y 11. Mostrar precio estimado y estado de reserva; puede ser pendiente o externa. Compartir por WhatsApp es manual." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="845" width="890" height="110" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dcu02b" name="DCU-02B · Solicitudes y participación">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1500" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" value="Convocados | DCU-02B · Solicitudes y participación · v1.1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="230" y="65" width="1040" height="930" />
+        </mxCell>
+        <mxCell id="user" value="Usuario registrado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="160" width="90" height="85" />
+        </mxCell>
+        <mxCell id="guest" value="Jugador invitado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="440" width="90" height="85" />
+        </mxCell>
+        <mxCell id="org" value="Organizador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1320" y="400" width="90" height="85" />
+        </mxCell>
+        <mxCell id="individual" value="Solicitar participación individual" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="120" width="260" height="65" />
+        </mxCell>
+        <mxCell id="group" value="Solicitar participación grupal" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="230" width="260" height="65" />
+        </mxCell>
+        <mxCell id="guestreq" value="Solicitar participación por enlace" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="340" width="260" height="65" />
+        </mxCell>
+        <mxCell id="status" value="Consultar estado de solicitud" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="450" width="260" height="65" />
+        </mxCell>
+        <mxCell id="leave" value="Darse de baja antes del inicio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="560" width="260" height="65" />
+        </mxCell>
+        <mxCell id="reconfirm" value="Reconfirmar participación" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="670" width="260" height="65" />
+        </mxCell>
+        <mxCell id="review" value="Consultar solicitudes y reputación" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="120" width="260" height="65" />
+        </mxCell>
+        <mxCell id="accept" value="Aceptar solicitud" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="230" width="260" height="65" />
+        </mxCell>
+        <mxCell id="reject" value="Rechazar solicitud" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="340" width="260" height="65" />
+        </mxCell>
+        <mxCell id="expel" value="Expulsar jugador" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="450" width="260" height="65" />
+        </mxCell>
+        <mxCell id="check" value="Validar cupos, duplicados y horarios" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="560" width="260" height="65" />
+        </mxCell>
+        <mxCell id="notice" value="Notificar decisión" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="670" width="260" height="65" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="user" target="individual">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="user" target="group">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="guest" target="guestreq">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="guest" target="status">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="user" target="status">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="user" target="leave">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="guest" target="leave">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="user" target="reconfirm">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="guest" target="reconfirm">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="review">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e10" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="accept">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e11" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="reject">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e12" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="expel">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e13" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="reconfirm">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e14" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="accept" target="check">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e15" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="accept" target="notice">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e16" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="reject" target="notice">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e17" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="reconfirm" target="check">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="note" value="RF-PA-04/06/07/10; RF-EQ-03/05. Pendientes no ocupan cupos. Aceptación grupal atómica, sin incorporaciones parciales. Invitado usa acceso personal para gestionar su participación. No se aceptan solicitudes después del inicio. Las bajas voluntarias se bloquean al inicio; baja tardía: menos de una hora antes." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="845" width="890" height="110" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dcu02c" name="DCU-02C · Cancelación y asistencia">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1500" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" value="Convocados | DCU-02C · Cancelación y asistencia · v1.1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="230" y="65" width="1040" height="930" />
+        </mxCell>
+        <mxCell id="org" value="Organizador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="250" width="90" height="85" />
+        </mxCell>
+        <mxCell id="admin" value="Administrador de establecimiento" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1320" y="230" width="90" height="85" />
+        </mxCell>
+        <mxCell id="cancel" value="Cancelar partido" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="350" y="170" width="260" height="65" />
+        </mxCell>
+        <mxCell id="cancelres" value="Cancelar también reserva vinculada" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="350" y="350" width="260" height="65" />
+        </mxCell>
+        <mxCell id="admincancel" value="Cancelar reserva vinculada" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="170" width="260" height="65" />
+        </mxCell>
+        <mxCell id="notify" value="Notificar cancelación a afectados" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="350" width="260" height="65" />
+        </mxCell>
+        <mxCell id="absent" value="Registrar ausencias (24 h desde el fin)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="350" y="550" width="260" height="65" />
+        </mxCell>
+        <mxCell id="e0" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="cancel">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="cancelres">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="org" target="absent">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" value="" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;" edge="1" parent="1" source="admin" target="admincancel">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" value="«extend»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="cancelres" target="cancel">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="admincancel" target="cancel">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="cancel" target="notify">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="note" value="RF-PA-08/10; RF-RE-01/02/04; RF-RS-06. Al inicio sin reserva confirmada o externa declarada: cancelar automáticamente, vencer solicitud pendiente, notificar y liberar jugadores. Conservar historial; sin penalizaciones. Invalidar votos emitidos o recibidos por ausentes; cerrar registro a las 24 h del fin." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="845" width="890" height="110" />
+        </mxCell>
+      <mxCell id="invalidate" value="Invalidar votos de ausentes" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="550" width="260" height="65" />
+        </mxCell>
+        <mxCell id="e7" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="absent" target="invalidate">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="automatic" value="Regla automática al inicio: si no hay reserva válida, cancelar partido y vencer solicitud pendiente. No es una acción de un actor humano." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="700" width="890" height="100" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
