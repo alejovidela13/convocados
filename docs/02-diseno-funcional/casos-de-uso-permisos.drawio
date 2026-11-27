@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DCU-07A" name="DCU-07A · Altas y revocaciones">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1600" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" value="Convocados | DCU-07A · Altas y revocaciones | v1.0" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="220" y="40" width="1160" height="1000" />
+        </mxCell>
+        <mxCell id="g" value="Gestor interno" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="360" width="120" height="90" />
+        </mxCell>
+        <mxCell id="list" value="Consultar administradores y asignaciones" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="140" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e5" source="g" target="list" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="create" value="Crear cuenta administrativa" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="290" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e7" source="g" target="create" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="link" value="Vincular cuenta existente" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="440" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e9" source="g" target="link" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="revoke" value="Revocar permiso administrativo" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="590" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e11" source="g" target="revoke" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="assign" value="Asignar establecimiento único" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="890" y="310" width="330" height="85" />
+        </mxCell>
+        <mxCell id="temp" value="Establecer credencial temporal" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="890" y="470" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e14" source="create" target="assign" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e15" source="create" target="temp" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e16" source="link" target="assign" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e17" source="link" target="temp" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="note" value="RF-US-07 · ACT-04 · RNF-03&lt;br&gt;Verificación personal de autorización antes del alta. Un establecimiento admite varios administradores; cada administrador gestiona uno solo. La revocación retira el permiso administrativo, no implica eliminar la identidad del jugador." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="770" width="900" height="170" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DCU-07B" name="DCU-07B · Activación y alcance">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1600" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" value="Convocados | DCU-07B · Activación y alcance | v1.0" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="220" y="40" width="1160" height="1000" />
+        </mxCell>
+        <mxCell id="a" value="Administrador asignado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="350" width="120" height="90" />
+        </mxCell>
+        <mxCell id="login" value="Iniciar sesión" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="140" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e5" source="a" target="login" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="password" value="Cambiar contraseña temporal" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="280" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e7" source="a" target="password" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="email" value="Verificar correo electrónico" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="420" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e9" source="a" target="email" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="panel" value="Acceder a gestión del establecimiento" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="560" width="330" height="85" />
+        </mxCell>
+        <mxCell id="e11" source="a" target="panel" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="check" value="Validar permiso vigente y establecimiento asignado" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="890" y="560" width="340" height="90" />
+        </mxCell>
+        <mxCell id="e13" source="panel" target="check" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="note" value="RF-US-07 · RNF-03 · CA-11&lt;br&gt;La gestión se habilita solo después del cambio de contraseña y la verificación del correo. Verificar autorización y propiedad del recurso en cada operación, incluso por URL directa. El gestor inicial se configura de forma segura fuera del flujo habitual de altas." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="320" y="760" width="910" height="175" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
