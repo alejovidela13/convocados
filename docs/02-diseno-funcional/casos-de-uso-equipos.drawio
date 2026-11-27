@@ -5,7 +5,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="boundary" value="Convocados | DCU-03A · Gestión de equipos · v1.0" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+        <mxCell id="boundary" value="Convocados | DCU-03A · Gestión de equipos · v1.1" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="230" y="55" width="1040" height="940" />
         </mxCell>
         <mxCell id="user" value="Usuario registrado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
@@ -23,7 +23,7 @@
         <mxCell id="edit" value="Editar nombre y modalidad" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="320" y="365" width="260" height="76" />
         </mxCell>
-        <mxCell id="add" value="Agregar integrante" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="add" value="Invitar integrante / obtener consentimiento" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="320" y="485" width="260" height="76" />
         </mxCell>
         <mxCell id="remove" value="Quitar integrante" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#64748b;fontColor=#172554;fontSize=14;" vertex="1" parent="1">
@@ -68,7 +68,7 @@
         <mxCell id="e9" value="«include»" style="html=1;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="add" target="unique">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="note" value="RF-EQ-01 / RF-EQ-02 · Nombre, modalidad e integrantes por nombre y teléfono. Máximo 5, 7, 8 u 11. No se requiere aprobación individual. La eliminación o edición no altera el historial de partidos." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff7ed;strokeColor=#c2410c;fontColor=#431407;fontSize=14;align=left;spacing=12;" vertex="1" parent="1">
+        <mxCell id="note" value="RF-EQ-01/02. Consentimiento directo antes de guardar datos del amigo. Máximo 5, 7, 8 u 11. Edición o eliminación no altera historial." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff7ed;strokeColor=#c2410c;fontColor=#431407;fontSize=14;align=left;spacing=12;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="290" y="820" width="920" height="135" />
         </mxCell>
       </root>
