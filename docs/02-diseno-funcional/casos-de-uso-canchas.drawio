@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="ca1" name="DCU-05A · Consulta y selección">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1500" pageHeight="1000">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" value="Convocados | DCU-05A · Consulta y selección | v1.0" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="230" y="45" width="1040" height="900" />
+        </mxCell>
+        <mxCell id="visit" value="Visitante" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="200" width="110" height="85" />
+        </mxCell>
+        <mxCell id="user" value="Usuario registrado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="540" width="110" height="85" />
+        </mxCell>
+        <mxCell id="browse" value="Consultar catálogo de canchas" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="160" width="270" height="80" />
+        </mxCell>
+        <mxCell id="filter" value="Filtrar por localidad, superficie o modalidad" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="160" width="270" height="80" />
+        </mxCell>
+        <mxCell id="detail" value="Consultar características de cancha" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="330" width="270" height="80" />
+        </mxCell>
+        <mxCell id="map" value="Visualizar ubicación en mapa" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="330" width="270" height="80" />
+        </mxCell>
+        <mxCell id="select" value="Seleccionar cancha para partido" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="540" width="270" height="80" />
+        </mxCell>
+        <mxCell id="external" value="Declarar reserva externa" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="540" width="270" height="80" />
+        </mxCell>
+        <mxCell id="request" value="Seleccionar cancha para solicitar reserva" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="720" width="270" height="80" />
+        </mxCell>
+        <mxCell id="evisitbrowse" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="visit" target="browse">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="evisitdetail" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="visit" target="detail">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="evisitmap" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="visit" target="map">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="euserbrowse" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="user" target="browse">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="euserdetail" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="user" target="detail">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="euserselect" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="user" target="select">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="euserrequest" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="user" target="request">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="efilterbrowse" value="«extend»" style="html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#475569;fontSize=13;" edge="1" parent="1" source="filter" target="browse">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="eexternalselect" value="«extend»" style="html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#475569;fontSize=13;" edge="1" parent="1" source="external" target="select">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="n1" value="Reserva externa: solo para establecimientos no adheridos. Es una declaración del organizador; no garantiza disponibilidad real." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="780" y="730" width="400" height="115" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ca2" name="DCU-05B · Gestión del catálogo">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1500" pageHeight="1000">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" value="Convocados | DCU-05B · Gestión del catálogo | v1.0" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="230" y="45" width="1040" height="900" />
+        </mxCell>
+        <mxCell id="gestor" value="Gestor interno" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="210" width="110" height="85" />
+        </mxCell>
+        <mxCell id="admin" value="Administrador de establecimiento" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1320" y="510" width="110" height="85" />
+        </mxCell>
+        <mxCell id="import" value="Importar catálogo JSON" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="140" width="270" height="80" />
+        </mxCell>
+        <mxCell id="register" value="Registrar establecimiento y canchas" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="300" width="270" height="80" />
+        </mxCell>
+        <mxCell id="affiliate" value="Gestionar adhesión del establecimiento" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="460" width="270" height="80" />
+        </mxCell>
+        <mxCell id="hours" value="Gestionar horarios y disponibilidad" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="850" y="420" width="270" height="80" />
+        </mxCell>
+        <mxCell id="price" value="Actualizar precio por hora" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="850" y="570" width="270" height="80" />
+        </mxCell>
+        <mxCell id="auth" value="Validar autorización sobre establecimiento" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="560" y="730" width="270" height="80" />
+        </mxCell>
+        <mxCell id="egestorimport" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="gestor" target="import">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="egestorregister" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="gestor" target="register">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="egestoraffiliate" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="gestor" target="affiliate">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="eadminhours" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="admin" target="hours">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="eadminprice" value="" style="html=1;endArrow=none;strokeColor=#475569;" edge="1" parent="1" source="admin" target="price">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="ehoursauth" value="«include»" style="html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#475569;fontSize=13;" edge="1" parent="1" source="hours" target="auth">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="epriceauth" value="«include»" style="html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#475569;fontSize=13;" edge="1" parent="1" source="price" target="auth">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="n2" value="Cada establecimiento contiene una o más canchas físicas. Cada cancha admite una o más modalidades. El catálogo se persiste en MySQL." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="135" width="470" height="125" />
+        </mxCell>
+        <mxCell id="n3" value="Los cambios de tarifa no alteran reservas confirmadas. Las reservas y bloqueos se detallan en DCU-06." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="610" width="240" height="125" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
