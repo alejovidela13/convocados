@@ -143,7 +143,7 @@
         <mxCell id="e21" value="«include»" edge="1" parent="1" source="guestaccess" target="token" style="endArrow=open;endFill=0;dashed=1;html=1;strokeColor=#475569;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="note" value="Correo verificado obligatorio. Enlace privado de invitado mostrado al solicitar; sin recuperación automática sin verificar identidad. Sesiones: jugador 30 días; administración 7 días. Cambio de correo con reautenticación y verificación; desactivación reversible y eliminación definitiva (ver ECU-01)." style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="note" value="Correo verificado obligatorio. Enlace privado de invitado mostrado al solicitar; sin recuperación automática sin verificar identidad. Sesiones: jugador 30 días; administración 7 días. Cambio de correo con reautenticación y verificación; desactivación reversible y eliminación definitiva (ver ECU-01). Desactivar solo sin compromisos activos; reactivar con inicio de sesión y confirmación; eliminación con espera de 30 días." style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="240" y="1010" width="990" height="65" />
         </mxCell>
       </root>

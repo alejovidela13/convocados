@@ -53,7 +53,7 @@
         <mxCell id="e17" source="link" target="temp" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="note" value="RF-US-07 · ACT-04 · RNF-03&lt;br&gt;Verificación personal de autorización antes del alta. Un establecimiento admite varios administradores; cada administrador gestiona uno solo. La revocación retira el permiso administrativo, no implica eliminar la identidad del jugador." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=12;" vertex="1" parent="1">
+        <mxCell id="note" value="RF-US-07 · ACT-04 · RNF-03&lt;br&gt;Verificación personal de autorización antes del alta. Un establecimiento admite varios administradores; cada administrador gestiona uno solo. La revocación retira el permiso administrativo, no implica eliminar la identidad del jugador. Reautenticar para otorgar/revocar permisos y modificar credenciales; sesión máxima 7 días." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=12;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="320" y="770" width="900" height="170" />
         </mxCell>
       </root>
@@ -100,7 +100,7 @@
         <mxCell id="e13" source="panel" target="check" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="note" value="RF-US-07 · RNF-03 · CA-11&lt;br&gt;La gestión se habilita solo después del cambio de contraseña y la verificación del correo. Verificar autorización y propiedad del recurso en cada operación, incluso por URL directa. El gestor inicial se configura de forma segura fuera del flujo habitual de altas." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=12;" vertex="1" parent="1">
+        <mxCell id="note" value="RF-US-07 · RNF-03 · CA-11&lt;br&gt;La gestión se habilita solo después del cambio de contraseña y la verificación del correo. Verificar autorización y propiedad del recurso en cada operación, incluso por URL directa. El gestor inicial se configura de forma segura fuera del flujo habitual de altas. Reautenticar para otorgar/revocar permisos y modificar credenciales; sesión máxima 7 días." style="shape=note;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=12;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="320" y="760" width="910" height="175" />
         </mxCell>
       </root>

@@ -74,7 +74,7 @@
         <mxCell id="e10" value="«include»" style="html=1;rounded=0;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="edit" target="notify">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="note" value="RF-PA-01/02/03/05/07/09/10/11. Creador ocupa cupo; modalidades 5, 7, 8, 11. Mostrar precio, reserva y pronóstico Open-Meteo si disponible; fallo no bloquea. WhatsApp manual." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;align=left;spacing=10;" vertex="1" parent="1">
+        <mxCell id="note" value="RF-PA-01/02/03/05/07/09/10/11. Creador ocupa cupo; modalidades 5, 7, 8, 11. Mostrar precio, reserva y pronóstico Open-Meteo si disponible; fallo no bloquea. WhatsApp manual. Carga directa de amigos sin consentimiento previo en plataforma." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;align=left;spacing=10;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="300" y="845" width="890" height="110" />
         </mxCell>
       </root>

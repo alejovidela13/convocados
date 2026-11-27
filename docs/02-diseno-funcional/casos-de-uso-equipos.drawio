@@ -68,7 +68,7 @@
         <mxCell id="e9" value="«include»" style="html=1;strokeColor=#475569;endArrow=none;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="add" target="unique">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="note" value="RF-EQ-01/02. Consentimiento directo antes de guardar datos del amigo. Máximo 5, 7, 8 u 11. Edición o eliminación no altera historial." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff7ed;strokeColor=#c2410c;fontColor=#431407;fontSize=14;align=left;spacing=12;" vertex="1" parent="1">
+        <mxCell id="note" value="RF-EQ-01/02. Consentimiento directo antes de guardar datos del amigo. Máximo 5, 7, 8 u 11. Edición o eliminación no altera historial. Invitados sin cuenta pueden consentir." style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff7ed;strokeColor=#c2410c;fontColor=#431407;fontSize=14;align=left;spacing=12;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="290" y="820" width="920" height="135" />
         </mxCell>
       </root>
