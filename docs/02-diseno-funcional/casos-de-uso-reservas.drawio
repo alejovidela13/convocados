@@ -5,7 +5,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="boundary" value="Convocados | DCU-06A · Solicitudes y agenda | v1.0" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+        <mxCell id="boundary" value="Convocados | DCU-06A · Solicitudes y agenda | v1.1" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="220" y="40" width="1160" height="1000" />
         </mxCell>
         <mxCell id="u" value="Usuario registrado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
@@ -77,7 +77,7 @@
         <mxCell id="e25" source="a" target="block" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="notes" value="RF-RS-01 a 06, 10. Solicitudes pendientes simultáneas permitidas; solo se confirman reservas compatibles. Validar conflictos y guardar tarifa y total al confirmar o registrar. Reserva pendiente vence al inicio. Reserva externa sin garantía de disponibilidad." style="shape=note;whiteSpace=wrap;html=1;size=15;fontSize=14;align=left;spacing=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="notes" value="RF-RS-01 a 06, 10. Pendientes simultáneas permitidas. Al confirmar (incluye manuales y recurrentes), rechazar pendientes incompatibles y notificar; conservar historial sin reactivación. Validar espacios compartidos y guardar tarifa y total. Pendiente vence al inicio; reserva externa sin garantía." style="shape=note;whiteSpace=wrap;html=1;size=15;fontSize=14;align=left;spacing=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="300" y="880" width="1000" height="125" />
         </mxCell>
       </root>
@@ -88,7 +88,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="boundary" value="Convocados | DCU-06B · Turnos fijos y recordatorios | v1.0" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+        <mxCell id="boundary" value="Convocados | DCU-06B · Turnos fijos y recordatorios | v1.1" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="220" y="40" width="1160" height="1000" />
         </mxCell>
         <mxCell id="a" value="Administrador de establecimiento" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
@@ -148,10 +148,16 @@
         <mxCell id="e21" source="dates" target="check" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="notes" value="RF-RS-07 a 10. Misma cancha, día y horario semanal; inicio y fin de vigencia. Cancelar una fecha no afecta las demás. Recordatorio con fecha, horario, cancha y valor; no se genera para fechas canceladas. Marca manual: no acredita recepción." style="shape=note;whiteSpace=wrap;html=1;size=15;fontSize=14;align=left;spacing=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="notes" value="RF-RS-07 a 10. Serie semanal: todas las fechas o ninguna, en una transacción. Cancelar una fecha no afecta las demás. Actualización expresa de precios futuros con aviso al cliente; conservar importes históricos. Recordatorio día anterior a ambos contactos; marca manual, sin acreditar recepción." style="shape=note;whiteSpace=wrap;html=1;size=15;fontSize=14;align=left;spacing=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="300" y="880" width="1000" height="125" />
         </mxCell>
-      </root>
+      <mxCell id="price" value="Actualizar precio de turnos futuros" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="700" width="310" height="80" />
+        </mxCell>
+        <mxCell id="priceedge" source="a" target="price" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        </root>
     </mxGraphModel>
   </diagram>
   <diagram id="DCU-06C" name="DCU-06C · Cancelaciones e integridad">
@@ -159,7 +165,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="boundary" value="Convocados | DCU-06C · Cancelaciones e integridad | v1.0" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
+        <mxCell id="boundary" value="Convocados | DCU-06C · Cancelaciones e integridad | v1.1" style="rounded=0;html=1;verticalAlign=top;fontStyle=1;fontSize=20;fillColor=none;strokeColor=#334155;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="220" y="40" width="1160" height="1000" />
         </mxCell>
         <mxCell id="u" value="Usuario registrado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
@@ -171,7 +177,7 @@
         <mxCell id="a" value="Administrador de establecimiento" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="1420" y="340" width="120" height="90" />
         </mxCell>
-        <mxCell id="cancel" value="Cancelar reserva propia" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
+        <mxCell id="cancel" value="Cancelar reserva propia antes del inicio" style="ellipse;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eaf2f8;strokeColor=#475569;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="300" y="120" width="310" height="80" />
         </mxCell>
         <mxCell id="e7" source="u" target="cancel" parent="1" edge="1" value="" style="html=1;strokeColor=#64748b;endArrow=none;">
@@ -216,7 +222,7 @@
         <mxCell id="e20" source="admincancel" target="release" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="notes" value="RF-PA-08, RF-RS-06/10. Al inicio, solicitudes pendientes vencen; partido sin reserva válida se cancela sin penalización. La cancelación de reserva vinculada por administrador cancela el partido. Reservas y bloqueos incompatibles no pueden superponerse. Política de cancelación por cliente pendiente de detalle." style="shape=note;whiteSpace=wrap;html=1;size=15;fontSize=14;align=left;spacing=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="notes" value="RF-PA-08, RF-RS-06/10/11. Cancelación directa del titular antes del inicio. Cancelar reserva vinculada (titular o administrador) cancela partido, libera jugadores y notifica sin penalización. Validar incompatibilidades físicas y temporales en transacción. Pendiente vence al inicio; partido sin reserva válida se cancela." style="shape=note;whiteSpace=wrap;html=1;size=15;fontSize=14;align=left;spacing=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="300" y="880" width="1000" height="125" />
         </mxCell>
         <mxCell id="ext" source="both" target="part" parent="1" edge="1" value="«extend»" style="html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#64748b;">
@@ -225,7 +231,13 @@
         <mxCell id="ext2" source="cancelmatch" target="admincancel" parent="1" edge="1" value="«extend» [partido vinculado]" style="html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#64748b;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-      </root>
+      <mxCell id="canceluserlinked" source="cancelmatch" target="cancel" parent="1" edge="1" value="«extend» [partido vinculado]" style="html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#64748b;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      <mxCell id="canceluserrelease" source="cancel" target="release" parent="1" edge="1" value="«include»" style="html=1;strokeColor=#64748b;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        </root>
     </mxGraphModel>
   </diagram>
 </mxfile>
